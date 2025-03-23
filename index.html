@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pweb</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1 id="nav-header">Test.Food.id</h1>
+      <ul id="nav-option">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Peta">Peta</a></li>
+        <li><a href="#Makanan">Makanan</a></li>
+        <li><a href="#Rekomendasi">Rekomendasi</a></li>
+      </ul>
+    </nav>
+    <main id="Home">
+      <input type="text" placeholder="Cari Makanan Terdekat" />
+    </main>
+    <main id="Peta">
+      <h1>Peta Makanan</h1>
+      <iframe
+        src="https://maps.google.com/maps?output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <button>Cari Lokasi Sekarang</button>
+    </main>
+    <main id="Makanan">
+      <h2>Daftar Tempat Makan</h2>
+      <h3>Lokasi Anda Belum Ditentukan</h3>
+      <div class="card-container">
+        <div class="card">
+          <img src="resto1.jpg" alt="Restoran 1" />
+          <h3>Restoran Enak</h3>
+          <p>Jl. Contoh No. 123, Kota Anda</p>
+          <p>⭐️⭐️⭐️⭐️⭐️ (4.5)</p>
+        </div>
+        <div class="card">
+          <img src="resto2.jpg" alt="Restoran 2" />
+          <h3>Warung Lezat</h3>
+          <p>Jl. Contoh No. 456, Kota Anda</p>
+          <p>⭐️⭐️⭐️⭐️ (4.0)</p>
+        </div>
+        <div class="card">
+          <img src="resto3.jpg" alt="Restoran 3" />
+          <h3>Kafe Nyaman</h3>
+          <p>Jl. Contoh No. 789, Kota Anda</p>
+          <p>⭐️⭐️⭐️⭐️⭐️ (5.0)</p>
+        </div>
+      </div>
+    </main>
+    <main id="Rekomendasi">
+      <div class="subcontainer">
+        <h2>Rekomendasi Tempat Makan</h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/019a19d9-adb0-403c-95d5-77c631d8ec4b_Go-Biz_20241111_093934.jpeg"
+              alt="Restoran 1"
+            />
+            <h3>Restoran Enak</h3>
+            <p>Jl. Contoh No. 123, Kota Anda</p>
+            <p>⭐️⭐️⭐️⭐️⭐️ (4.5)</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://asset.kompas.com/crops/c4kE4yt7Y3VcILBbGECwOVPZLlI=/0x0:0x0/1200x800/data/photo/2022/11/30/6386eac0cc12e.jpg"
+              alt="Restoran 2"
+            />
+            <h3>Warung Lezat</h3>
+            <p>Jl. Contoh No. 456, Kota Anda</p>
+            <p>⭐️⭐️⭐️⭐️ (4.0)</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://assets.pikiran-rakyat.com/crop/0x0:6912x3456/x/photo/2024/08/01/154010623.jpg"
+              alt="Restoran 3"
+            />
+            <h3>Kafe Nyaman</h3>
+            <p>Jl. Contoh No. 789, Kota Anda</p>
+            <p>⭐️⭐️⭐️⭐️⭐️ (5.0)</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

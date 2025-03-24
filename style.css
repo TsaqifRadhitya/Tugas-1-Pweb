@@ -14,7 +14,7 @@ body {
 nav {
     z-index: 50;
     width: 100%;
-    padding: 2%;
+    padding: 1% 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,6 +23,17 @@ nav {
     top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Rekomendasi h3 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+
+
+#Rekomendasi p {
+    padding-left: 5%;
 }
 
 #nav-header {
@@ -37,11 +48,15 @@ nav {
 }
 
 #nav-option a {
-    font-size: x-large;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
 }
+
+/* #nav-option a:hover {} */
 
 #nav-option a:hover {
     color: #ff6347;
@@ -162,23 +177,41 @@ main {
 
 }
 
-#Makanan .card-container {
-    padding-left: 5%;
-    padding-right: 5%;
+#Rekomendasi .card-container {
+    min-height: 200vh;
 }
 
 .card-container {
     height: 50vh;
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3, 0.8fr);
-    /* Membuat 3 kolom dengan lebar yang sama */
     gap: 100px;
-    /* Jarak antar item */
 }
 
-#Makanan .card {
-    display: none;
+@media (min-width : 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 0.8fr);
+    }
+
+    #nav-option a {
+        display: block;
+
+    }
+
+    #Rekomendasi .card-container {
+        min-height: 80vh;
+    }
+    
+}
+
+@media (min-width : 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 0.8fr);
+    }
+
+    #Rekomendasi .card-container {
+        min-height: 0vh;
+    }
 }
 
 .card {
@@ -202,9 +235,16 @@ main {
     object-fit: cover;
 }
 
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .card h3 {
     font-size: 2rem;
-    margin: 15px 0 10px;
+    margin: 0 0 10px;
     color: #333;
 }
 
@@ -213,4 +253,52 @@ main {
     font-size: 1.5rem;
     color: #666;
     margin: 5px 0;
+}
+
+#Makanan .card {
+    display: none;
+}
+
+#Makanan {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#Makanan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#Makanan .card-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#Makanan .card {
+    height: 100vh;
+    flex-direction: row;
+    width: 80%;
+}
+
+#Makanan>h3 {
+    color: #666;
+    font-weight: 600;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: calc(-50%);
+}
+
+#Makanan img {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
 }

@@ -28,7 +28,6 @@ nav {
 #Rekomendasi h3 {
     padding-top: 5%;
     padding-bottom: 2%;
-
 }
 
 
@@ -195,13 +194,11 @@ main {
 
     #nav-option a {
         display: block;
-
     }
 
     #Rekomendasi .card-container {
         min-height: 80vh;
     }
-    
 }
 
 @media (min-width : 1024px) {
@@ -239,7 +236,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .card h3 {
@@ -253,10 +250,6 @@ main {
     font-size: 1.5rem;
     color: #666;
     margin: 5px 0;
-}
-
-#Makanan .card {
-    display: none;
 }
 
 #Makanan {
@@ -281,6 +274,7 @@ main {
 }
 
 #Makanan .card {
+    display: none;
     height: 100vh;
     flex-direction: row;
     width: 80%;
@@ -296,9 +290,14 @@ main {
     translate: calc(-50%);
 }
 
+.card-content h3 {
+    text-align: left;
+}
+
 #Makanan img {
-    width: 40%;
     height: auto;
+    width: 100%;
+    max-width: 500px;
     object-fit: contain;
     align-self: center;
 }

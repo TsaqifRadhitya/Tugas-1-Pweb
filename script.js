@@ -27,6 +27,13 @@ const dom = () => {
 
         if (inputValue !== '' && inputValue.trim() !== '') {
             document.querySelector('#Peta button').click()
+            document.querySelectorAll('#Makanan .card-content p').forEach((items) => {
+                const keyword = document.createElement('span')
+                const value = document.createTextNode(`Tempat ini memiliki menu andalan ${inputValue}`)
+                keyword.appendChild(value)
+                keyword.style.fontWeight = 700
+                items.appendChild(keyword)
+            })
             location.href = '#Makanan'
             return;
         }

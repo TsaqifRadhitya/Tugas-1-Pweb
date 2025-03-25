@@ -297,7 +297,7 @@ main {
 #Makanan img {
     height: auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 430px;
     object-fit: contain;
     align-self: center;
 }

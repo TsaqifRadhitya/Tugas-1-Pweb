@@ -16,9 +16,9 @@ const changeMap = () => {
                 document.querySelector('#Peta h1').innerHTML = `📍 ${data.results[0].formatted}`
                 document.querySelector('#Makanan h3').style.display = 'none'
                 document.querySelectorAll('#Makanan .card').forEach((Element) => Element.style.display = 'flex')
-                setTimeout(()=> {
+                setTimeout(() => {
                     document.getElementById('Makanan').scrollIntoView({ behavior: 'smooth' });
-                },1000)
+                }, 1000)
             });
         }
     )
@@ -58,5 +58,12 @@ const dom = () => {
         item.addEventListener('click', () => [
             location.href = `https://www.youtube.com/watch?v=xvFZjo5PgG0`
         ])
+    })
+    document.querySelectorAll('nav a').forEach((node) => {
+        console.log(node.getAttribute('href'))
+        node.addEventListener('click', (event) => {
+            event.preventDefault()
+            document.getElementById(node.getAttribute('href').substring(1)).scrollIntoView({ behavior: "smooth" })
+        })
     })
 }

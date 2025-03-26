@@ -11,7 +11,10 @@ Test.Food.id adalah aplikasi web revolusioner yang membantu Anda menemukan tempa
 - **Filter Pencarian**:
   - Rekomendasi Makanan Berdasarkan Lokasi Pengguna
   - Rekomendasi Makanan Berdasarkan Makanan atau Minuman yang Dicari
-- **Peta Interaktif**: Tampilan visual dengan marker lokasi terkini dari pengguna
+  - Hasil Pencarian ketika ditekan akan diarahkan pada tab pencarian pada google sesuai dengan keyword pencarian makanan
+- **Peta Interaktif**: 
+  -Tampilan visual dengan marker lokasi terkini dari pengguna
+  -Pencarian Alamat Pengguna menggunakan API Geoapify dengan parameter berupa coordinate dari pengguna
 
 ### 🚀 Rekomendasi Makanan
 - **"Coba Baru!"**: Rekomendasi kuliner unik di luar area Anda
